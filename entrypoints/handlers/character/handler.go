@@ -3,11 +3,11 @@ package character
 import "github.com/juanmiguelar/character_generator/entrypoints/handlers/character/providers"
 
 type HandlerDependencies struct {
-	CharacterBuilder providers.CharacterBuilderDirector
+	CharacterBuilder providers.CharacterDirectorProvider
 }
 
 type handler struct {
-	characterBuilder providers.CharacterBuilderDirector
+	characterBuilder providers.CharacterDirectorProvider
 }
 
 func newHandler(params HandlerDependencies) handler {

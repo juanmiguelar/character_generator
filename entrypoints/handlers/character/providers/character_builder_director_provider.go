@@ -5,8 +5,8 @@ import (
 	"github.com/juanmiguelar/character_generator/internal/core/entities"
 )
 
-// CharacterBuilderDirector defines the interface for building characters.
-type CharacterBuilderDirector interface {
+// CharacterDirectorProvider defines the interface for building characters.
+type CharacterDirectorProvider interface {
 	Build() (entities.Character, error)
 	SetBuilder(b providers.CharacterBuilderProvider)
 }

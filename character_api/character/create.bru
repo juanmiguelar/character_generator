@@ -5,7 +5,11 @@ meta {
 }
 
 post {
-  url: http://localhost:8080/character/create
+  url: http://localhost:8080/character/create?generatorType=AI
   body: none
   auth: none
+}
+
+query {
+  generatorType: AI
 }
